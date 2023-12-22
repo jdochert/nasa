@@ -8,9 +8,6 @@ output.tf - Currently the only item output is the cluster name on completion of 
 
 Useful commands:
 
-There are various ways to run these commands on the GCP environment.  For testing I used... <br>
-"gcloud container clusters get-credentials --zone us-central1 space-cluster-pacman" <br>
-
 Once you can access the environment the typical terraform workflow follows... <br>
 terraform init <br>
 terraform apply <br>
@@ -23,3 +20,6 @@ terraform apply "runfile.txt" <br>
 
 The cluster can be cleaned up with good ol... <br>
 terraform destroy
+
+After the cluster is running, to access it with kubectl you could run this... <br>
+"gcloud container clusters get-credentials --zone us-central1 space-cluster-pacman" <br>
