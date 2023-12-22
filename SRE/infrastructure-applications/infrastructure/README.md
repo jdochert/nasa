@@ -8,18 +8,18 @@ output.tf - Currently the only item output is the cluster name on completion of 
 
 Useful commands:
 
-There are various ways to run these commands on the GCP environment.  For testing I used...
-"gcloud container clusters get-credentials --zone us-central1 space-cluster-pacman"
+There are various ways to run these commands on the GCP environment.  For testing I used... <br>
+"gcloud container clusters get-credentials --zone us-central1 space-cluster-pacman" <br>
 
-Once you can access the environment the typical terraform workflow follows...
-terraform init
-terraform apply
+Once you can access the environment the typical terraform workflow follows... <br>
+terraform init <br>
+terraform apply <br>
 
-...or for the more cautious...
-terraform init
-terraform validate
-terraform plan -out "runfile.txt"
-terraform apply "runfile.txt"
+...or for the more cautious... <br>
+terraform init <br>
+terraform validate <br>
+terraform plan -out "runfile.txt" <br>
+terraform apply "runfile.txt" <br>
 
-The cluster can be cleaned up with good ol...
+The cluster can be cleaned up with good ol... <br>
 terraform destroy
