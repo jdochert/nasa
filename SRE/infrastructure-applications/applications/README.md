@@ -8,7 +8,7 @@ To launch the dev environment run the following from the kustomize folder...
 kubectl apply -k overlays/dev
 
 Key details for dev:
-dev is set to use a smaller autoscale group 1/2
+dev is set to use a smaller autoscale group 1/2<br>
 dev is served through a simple external load balancer that forwards traffic from port 88 to 9898 on the pod.
 
 To launch the prod environment run the following from the kustomize folder...
