@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: podinfo
+  namespace: default
+spec:
+  ports:
+  - port: 88
+    protocol: TCP
+    targetPort: 9898
+  selector:
+    app: podinfo
+  type: LoadBalancer
