@@ -15,7 +15,7 @@ Once you can access the environment the typical terraform workflow follows... <b
 terraform init <br>
 terraform apply <br>
 
-...or for the more cautious... <br>
+...or for the more less adventurous... <br>
 terraform init <br>
 terraform validate <br>
 terraform plan -out "runfile.txt" <br>
